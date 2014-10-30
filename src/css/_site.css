@@ -1,0 +1,313 @@
+
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'dinproregular';
+    src: url('fonts/dinpro-webfont.eot');
+    src: url('fonts/dinpro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinpro-webfont.woff2') format('woff2'),
+         url('fonts/dinpro-webfont.woff') format('woff'),
+         url('fonts/dinpro-webfont.ttf') format('truetype'),
+         url('fonts/dinpro-webfont.svg#dinproregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'din_prolight';
+    src: url('fonts/dinpro-light-webfont.eot');
+    src: url('fonts/dinpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinpro-light-webfont.woff2') format('woff2'),
+         url('fonts/dinpro-light-webfont.woff') format('woff'),
+         url('fonts/dinpro-light-webfont.ttf') format('truetype'),
+         url('fonts/dinpro-light-webfont.svg#din_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'din_promedium';
+    src: url('fonts/dinpro-medium-webfont.eot');
+    src: url('fonts/dinpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinpro-medium-webfont.woff2') format('woff2'),
+         url('fonts/dinpro-medium-webfont.woff') format('woff'),
+         url('fonts/dinpro-medium-webfont.ttf') format('truetype'),
+         url('fonts/dinpro-medium-webfont.svg#din_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* CONTENT */
+body {
+    font-size:16px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+   font-family: "ff-din-web",sans-serif;
+
+}
+h1,h2,h3{
+    font-family: "ff-din-web",sans-serif;
+     font-weight: 300;
+}
+.container{
+    width: 100%;
+
+}
+.site-header{
+
+   font-family: "ff-din-web",sans-serif;
+    width: 100%;
+    height: 590px;
+    text-align: center;
+    background:url("../img/background_mountain.jpg");
+    padding:30px 0;
+    box-sizing:border-box;
+}
+.site-logo{
+    width:250px;
+    height:50px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px auto;
+}
+.site-promo{
+    margin:20px auto 10px auto;
+    color:#fff;
+    font-size:34px;
+    width:300px;
+}
+.swipe-contain {
+  width:732px;
+  height:523px;
+  margin:20px auto;
+  background-size:732px auto;
+  background-image:url("../img/ipad.png");
+  background-repeat: no-repeat;
+  padding:55px 122px 97px 118px;
+  box-sizing:border-box;
+  display: inline-block;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  width:492px;
+  height:370px;
+  margin:0px;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:492px;
+  position: relative;
+  background-color:rgba(255,100,200,0.3);
+  height:370px;
+}
+.swipe-label{
+    display: inline-block;
+    width:250px;
+    height:120px;
+    margin-left:-30px;
+    position: absolute;
+    margin-top:260px;
+}
+.counter {
+    text-align: left;
+    padding:10px;
+    box-sizing:border-box;
+}
+.counter span.active {
+   
+} 
+.counter span {
+    margin:5px;
+    display: inline-block;
+    border-bottom:1px solid transparent;
+    padding-bottom:4px;
+    color:rgba(255,255,255,0.6);
+    font-size:25px;
+}
+.counter span.active {
+    border-bottom:1px solid #fff;
+    color:#fff;
+}
+#swipe-text{
+    color:#fff;
+    text-align: left;
+    line-height: 28px;
+    font-size:21px;
+    margin-left:15px;
+}
+
+.site-section{
+    text-align: center;
+    margin:110px auto;
+    max-width: 660px;
+}
+.site-section h2{
+    font-family: "din_prolight";
+    font-size: 34px; 
+    padding-top:60px;
+    font-weight: 300;
+    margin-bottom:10px;
+}
+.site-section p{
+    font-family: "din_prolight";
+    font-size: 18px;
+    line-height: 27px; 
+    padding:10px;
+}
+form input {
+    border:0px;
+    border-bottom:2px solid #d6d4d4;
+    background:none;
+    padding:10px;
+    
+    box-sizing:border-box;
+    margin:25px 0;
+    color:#111;
+    font-family: "din_prolight";
+    font-size: 17px;
+}
+input.full {
+    width: 100%;
+}
+input.col-50 {
+    width: 48%;
+    float:left;
+    margin-right:2%;
+    margin-left:0px;
+}
+input.col-50.right{
+   float:right;
+   margin-right:0px;
+   margin-left:2%;
+}
+
+textarea {
+    width:100%;
+    border:2px solid #d6d4d4;
+    margin:25px 0;
+    font-family: "din_prolight";
+    font-size: 17px;
+    padding:10px;
+}
+textarea:focus,input:focus{
+    outline:none;
+    box-shadow: none;
+}
+.btn{
+    background:#61c982;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+    padding:12px 60px;
+    border-radius: 50px;
+    box-shadow: none;
+    outline: none;
+    font-size:17px;
+    border:0px;
+}
+.dotts{
+    position: relative;
+    margin: 30px auto 0px auto;
+    width:100px;
+    height: 20px;
+    z-index: 2;
+}
+.dotts div {
+    height:10px;
+    width:10px;
+    border-radius:10px;
+    background:#ccc;
+    display: inline-block;
+    margin:10px 2px;
+}
+.dotts div.active {
+    background:#111;
+}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #222;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #222;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #222;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #222;
+}
+
+/* MOBILE */
+@media only screen and (max-width : 1150px) {
+    .site-header{
+        height: 590px;
+    }
+    .site-logo{
+        width:250px;
+        height:50px;
+    }
+    .site-promo{
+        width:300px;
+    }
+    .swipe-contain {
+      width:732px;
+      height:523px;
+      background-size:732px auto;
+      padding:55px 122px 97px 118px;
+
+    }
+    .swipe {
+      width:492px;
+      height:370px;
+    }
+
+    .swipe-wrap > div {
+      width:492px;
+      height:370px;
+    }
+    .swipe-label{
+        width:400px;
+        height:120px;
+        margin:-150px auto 0 auto;
+        position: relative;
+        color:#222;
+        padding:0 00px;
+        top:0px;
+        font-size:14px;
+    }
+    #swipe-text{
+        color:#222;
+        text-align: center;
+         width:280px;
+         margin:0 auto;
+    }
+    .counter{
+        display: none;
+    }
+    .site-section h2{
+        margin-top:180px;
+    }
+
+}
+
+
+
+
+
+
+
+
