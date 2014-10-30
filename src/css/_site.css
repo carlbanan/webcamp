@@ -251,34 +251,9 @@ textarea:focus,input:focus{
    color:    #222;
 }
 
-/* MOBILE */
+/* TABLET */
 @media only screen and (max-width : 1150px) {
-    .site-header{
-        height: 590px;
-    }
-    .site-logo{
-        width:250px;
-        height:50px;
-    }
-    .site-promo{
-        width:300px;
-    }
-    .swipe-contain {
-      width:732px;
-      height:523px;
-      background-size:732px auto;
-      padding:55px 122px 97px 118px;
 
-    }
-    .swipe {
-      width:492px;
-      height:370px;
-    }
-
-    .swipe-wrap > div {
-      width:492px;
-      height:370px;
-    }
     .swipe-label{
         width:400px;
         height:120px;
@@ -302,6 +277,68 @@ textarea:focus,input:focus{
         margin-top:180px;
     }
 
+}
+/* MOBILE */
+@media only screen and (max-width : 760px) {
+
+    .site-header{
+        height: 365px;
+        background-size: auto 100%;
+    }
+    .site-logo{
+        width:250px;
+        height:50px;
+    }
+    .site-promo{
+        width:300px;
+        font-size:21px;
+    }
+    .swipe-contain {
+      width:320px;
+      height:229px;
+      background-size:320px auto;
+      padding:23px 60px 47px 50px;
+
+    }
+    .swipe {
+      width:216px;
+      height:162px;
+    }
+
+    .swipe-wrap > div,.swipe-wrap > div > img {
+      width:216px;
+      height:162px;
+    }
+    .swipe-label{
+        width:310px;
+        height:120px;
+        margin:0px auto 0 auto;
+        position: relative;
+        color:#222;
+        padding:0 00px;
+        top:0px;
+        font-size:14px;
+    }
+    #swipe-text{
+        color:#222;
+        text-align: center;
+         width:280px;
+         margin:0 auto;
+    }
+    .counter{
+        display: none;
+    }
+    .site-section h2{
+        margin-top:110px;
+        font-size:21px;
+    }
+    input.col-50,input.col-50.right,input.full, textarea {
+        width: 95%;
+        float:left;
+        box-sizing:border-box;
+        margin-right:3%;
+        margin-left:3%;
+    }
 }
 
 
