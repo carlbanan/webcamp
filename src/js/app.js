@@ -24,8 +24,24 @@ $(function() {
 		 }
 	});
 
+	$(".dotts div,.counter span").click(function () {
+		var go = $(this).attr("go");
+		console.log(go);
+		window.mySwipe.slide(go, 200);
+	});
+
 	// NEXT SLIDE 
 	$(".swipe").click(function () {
 		window.mySwipe.next();
+	});
+
+	$(".select-drop").click(function(){
+		$(this).toggleClass("active");
+	});
+	$(".invalue").click(function(){
+		var newval = $(this).text();
+		$("#actvalue").html(newval);
+		$("#spend").val(newval);
+		
 	});
 });

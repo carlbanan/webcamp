@@ -63,7 +63,11 @@ h1,h2,h3{
     width: 100%;
     height: 590px;
     text-align: center;
-    background:url("../img/background_mountain.jpg");
+    background: url("../img/background_mountain.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
     padding:30px 0;
     box-sizing:border-box;
 }
@@ -165,7 +169,7 @@ h1,h2,h3{
     line-height: 27px; 
     padding:10px;
 }
-form input {
+form input ,.input #actvalue{
     border:0px;
     border-bottom:2px solid #d6d4d4;
     background:none;
@@ -191,6 +195,29 @@ input.col-50.right{
    margin-right:0px;
    margin-left:2%;
 }
+.select-drop{
+  clear:both;
+  padding-top:10px;
+}
+.select-drop .invalue-c{
+  display: none;
+ 
+  width:inherit;
+}
+.select-drop.active .invalue-c{
+  display: block;
+
+}
+.invalue{
+  width:100%;
+  background:#f5f4f1;
+  padding:10px 0;
+  cursor: pointer;
+}
+.invalue:hover{
+    background:#e5e4e1;
+}
+
 
 textarea {
     width:100%;
@@ -218,7 +245,7 @@ textarea:focus,input:focus{
 }
 .dotts{
     position: relative;
-    margin: 30px auto 0px auto;
+    margin: 45px auto 0px auto;
     width:100px;
     height: 20px;
     z-index: 2;
@@ -294,10 +321,12 @@ textarea:focus,input:focus{
         font-size:21px;
     }
     .swipe-contain {
+      margin-top:30px;
       width:320px;
       height:229px;
       background-size:320px auto;
       padding:23px 60px 47px 50px;
+      display: block;
 
     }
     .swipe {
@@ -333,11 +362,14 @@ textarea:focus,input:focus{
         font-size:21px;
     }
     input.col-50,input.col-50.right,input.full, textarea {
-        width: 95%;
+        width: 94%;
         float:left;
         box-sizing:border-box;
         margin-right:3%;
         margin-left:3%;
+    }
+    .dotts{
+      margin-top:20px;
     }
 }
 
