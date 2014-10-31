@@ -174,7 +174,6 @@ form input ,.input #actvalue{
     border-bottom:2px solid #d6d4d4;
     background:none;
     padding:10px;
-    
     box-sizing:border-box;
     margin:25px 0;
     color:#111;
@@ -201,12 +200,10 @@ input.col-50.right{
 }
 .select-drop .invalue-c{
   display: none;
- 
   width:inherit;
 }
 .select-drop.active .invalue-c{
   display: block;
-
 }
 .invalue{
   width:100%;
@@ -217,7 +214,12 @@ input.col-50.right{
 .invalue:hover{
     background:#e5e4e1;
 }
-
+.input #actvalue{
+  background-image:url("../img/down.png");
+  background-position:  center right;
+  background-repeat: no-repeat;
+  margin-bottom:0px;
+}
 
 textarea {
     width:100%;
@@ -226,6 +228,8 @@ textarea {
     font-family: "din_prolight";
     font-size: 17px;
     padding:10px;
+    margin-top:50px;
+    box-sizing:border-box;
 }
 textarea:focus,input:focus{
     outline:none;
@@ -361,7 +365,7 @@ textarea:focus,input:focus{
         margin-top:110px;
         font-size:21px;
     }
-    input.col-50,input.col-50.right,input.full, textarea {
+    input.col-50,input.col-50.right,input.full, textarea ,.input{
         width: 94%;
         float:left;
         box-sizing:border-box;
